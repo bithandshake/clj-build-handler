@@ -15,6 +15,7 @@
   ; - If the given version is ':auto', and the file does not contain an increasable build version,
   ;   it stores the 'INITIAL-BUILD-VERSION' value in the file.
   ; - An increasable build version is a string that only contain digits separated by dots.
+  ; - The EDN file must contain a map with a key ':build-version'.
   ;
   ; @param (keyword or string) build-version
   ; :auto

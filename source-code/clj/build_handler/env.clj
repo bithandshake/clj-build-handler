@@ -11,6 +11,7 @@
   ; @description
   ; - Returns the actual build version stored in the EDN file found on the given or the default filepath.
   ; - If the file does not contain a build version, it returns the 'INITIAL-BUILD-VERSION' value.
+  ; - The EDN file must contain a map with a key ':build-version'.
   ;
   ; @param (map)(opt) options
   ; {:filepath (string)(opt)
@@ -41,6 +42,7 @@
   ; @description
   ; - Appends the actual build version (stored in the EDN file found on the given or the default filepath)
   ;   to the given URI as a query string.
+  ; - The EDN file must contain a map with a key ':build-version'.
   ; - Using the actual build version as a query parameter could make the browser's cache handler
   ;   updating the cached version of a file when the version changes in the URI.
   ;

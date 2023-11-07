@@ -1,11 +1,11 @@
 
-### iso.build-handler
+### iso.build-handler.api
 
-Functional documentation of the iso.build-handler isomorphic namespace
+Functional documentation of the iso.build-handler.api isomorphic namespace
 
 ---
 
-##### [README](../../../README.md) > [DOCUMENTATION](../../COVER.md) > iso.build-handler
+##### [README](../../../../README.md) > [DOCUMENTATION](../../../COVER.md) > iso.build-handler.api
 
 ### Index
 
@@ -17,7 +17,7 @@ Functional documentation of the iso.build-handler isomorphic namespace
 
 ```
 @description
-- Appends the given build version to the given URI as a query-string.
+- Appends the given build version to the given URI as a query string.
 - Using the actual build version as a query parameter could make the browser's cache handler
   updating the cached version of a file when the version changes in the URI.
 ```
@@ -55,7 +55,7 @@ Functional documentation of the iso.build-handler isomorphic namespace
 
 ```
 (defn uri<-build-version
-  [uri]
+  [uri build-version]
   (uri/use-url-query-string uri (str "v=" build-version)))
 ```
 
@@ -65,10 +65,10 @@ Functional documentation of the iso.build-handler isomorphic namespace
 <summary>Require</summary>
 
 ```
-(ns my-namespace (:require [iso.build-handler :refer [uri<-build-version]]))
+(ns my-namespace (:require [iso.build-handler.api :refer [uri<-build-version]]))
 
-(iso.build-handler/uri<-build-version ...)
-(uri<-build-version                   ...)
+(iso.build-handler.api/uri<-build-version ...)
+(uri<-build-version                       ...)
 ```
 
 </details>

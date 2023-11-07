@@ -15,7 +15,7 @@ Functional documentation of the [clj-build-handler](https://github.com/bithandsh
 
 ### Isomorphic namespaces
 
-* [iso.build-handler](cljc/iso/build-handler/API.md)
+* [iso.build-handler.api](cljc/iso/build-handler/API.md)
 
 ---
 
