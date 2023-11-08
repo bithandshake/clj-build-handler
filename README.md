@@ -8,13 +8,13 @@ The <strong>clj-build-handler</strong> is a simple build version handler for Clo
 ### deps.edn
 
 ```
-{:deps {bithandshake/clj-build-handler {:git/url "https://github.com/bithandshake/clj-build-handler"
-                                        :sha     "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}}
+{:deps {monotech-tools/clj-build-handler {:git/url "https://github.com/monotech-tools/clj-build-handler"
+                                          :sha     "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}}
 ```
 
 ### Current version
 
-Check out the latest commit on the [release branch](https://github.com/bithandshake/clj-build-handler/tree/release).
+Check out the latest commit on the [release branch](https://github.com/monotech-tools/clj-build-handler/tree/release).
 
 ### Documentation
 
