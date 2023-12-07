@@ -1,7 +1,7 @@
 
 (ns build-handler.side-effects
     (:require [build-handler.config :as config]
-              [format.api           :as format]
+              [fruits.format.api    :as format]
               [io.api               :as io]))
 
 ;; ----------------------------------------------------------------------------
