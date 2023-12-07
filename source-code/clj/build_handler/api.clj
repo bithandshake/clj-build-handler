@@ -8,16 +8,16 @@
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
 
-; build-handler.config
+; @redirect (build-handler.config)
 (def DEFAULT-BUILD-VERSION-FILEPATH config/DEFAULT-BUILD-VERSION-FILEPATH)
 (def INITIAL-BUILD-VERSION          config/INITIAL-BUILD-VERSION)
 
-; build-handler.env
+; @redirect (build-handler.env)
 (def get-actual-build-version  env/get-actual-build-version)
 (def uri<-actual-build-version env/uri<-actual-build-version)
 
-; build-handler.side-effects
+; @redirect (build-handler.side-effects)
 (def update-build-version! side-effects/update-build-version!)
 
-; build-handler.utils
+; @redirect (build-handler.utils)
 (def uri<-build-version utils/uri<-build-version)
