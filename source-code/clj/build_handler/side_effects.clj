@@ -9,7 +9,7 @@
 
 (defn update-build-version!
   ; @description
-  ; - Updates the build version stored in the EDN file found on the given or the default filepath.
+  ; - Updates the build version stored in the EDN file at the given or the default filepath.
   ; - If the given version is a specific value, it stores the value in the file.
   ; - If the given version is ':auto', it updates the current build version in the file by increasing it.
   ; - If the given version is ':auto', and the file does not contain an increasable build version,
@@ -21,7 +21,7 @@
   ; :auto
   ; @param (map)(opt) options
   ; {:filepath (string)(opt)
-  ;   Default: build-handler/DEFAULT-BUILD-VERSION-FILEPATH}
+  ;   Default: "environment/build-version.edn"}
   ;
   ; @usage
   ; (update-build-version! :auto)

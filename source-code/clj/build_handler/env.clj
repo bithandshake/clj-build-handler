@@ -9,13 +9,13 @@
 
 (defn get-actual-build-version
   ; @description
-  ; - Returns the actual build version stored in the EDN file found on the given or the default filepath.
+  ; - Returns the actual build version stored in the EDN file at the given or the default filepath.
   ; - If the file does not contain a build version, it returns the 'INITIAL-BUILD-VERSION' value.
   ; - The EDN file must contain a map with a key ':build-version'.
   ;
   ; @param (map)(opt) options
   ; {:filepath (string)(opt)
-  ;   Default: build-handler/DEFAULT-BUILD-VERSION-FILEPATH}
+  ;   Default: "environment/build-version.edn"}
   ;
   ; @usage
   ; (get-actual-build-version)
@@ -40,7 +40,7 @@
 
 (defn uri<-actual-build-version
   ; @description
-  ; - Appends the actual build version (stored in the EDN file found on the given
+  ; - Appends the actual build version (stored in the EDN file at the given
   ;   or the default filepath) to the given URI as a query string.
   ; - The EDN file must contain a map with a key ':build-version'.
   ;
@@ -51,7 +51,7 @@
   ; @param (string) uri
   ; @param (map)(opt) options
   ; {:filepath (string)(opt)
-  ;   Default: build-handler/DEFAULT-BUILD-VERSION-FILEPATH}
+  ;   Default: "environment/build-version.edn"}
   ;
   ; @usage
   ; (uri<-actual-build-version "/my-style.css")
