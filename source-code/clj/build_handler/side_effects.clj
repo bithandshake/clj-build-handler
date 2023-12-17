@@ -14,7 +14,7 @@
   ; - If the given version is ':auto', it updates the current build version in the file by increasing it.
   ; - If the given version is ':auto', and the file does not contain an increasable build version,
   ;   it stores the 'INITIAL-BUILD-VERSION' value in the file.
-  ; - An increasable build version is a string that only contain digits separated by dots.
+  ; - An increasable build version is a string that contains only digits separated by period characters (.).
   ; - The EDN file must contain a map with a key ':build-version'.
   ;
   ; @param (keyword or string) build-version
@@ -32,12 +32,12 @@
   ; @usage
   ; (update-build-version! "0.4.2.0" {:filepath "my-build-version.edn"})
   ;
-  ; @example
+  ; @usage
   ; (update-build-version! :auto)
   ; =>
   ; "0.4.2.0"
   ;
-  ; @example
+  ; @usage
   ; (update-build-version! "0.4.2.0")
   ; =>
   ; "0.4.2.0"

@@ -5,5 +5,5 @@
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
 
-; iso.build-handler.utils
+; @redirect (iso.build-handler.utils/*)
 (def uri<-build-version utils/uri<-build-version)

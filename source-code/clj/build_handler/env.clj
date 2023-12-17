@@ -23,7 +23,7 @@
   ; @usage
   ; (get-actual-build-version {:filepath "my-build-version.edn"})
   ;
-  ; @example
+  ; @usage
   ; (get-actual-build-version)
   ; =>
   ; "0.4.2.0"
@@ -40,11 +40,13 @@
 
 (defn uri<-actual-build-version
   ; @description
-  ; - Appends the actual build version (stored in the EDN file found on the given or the default filepath)
-  ;   to the given URI as a query string.
+  ; - Appends the actual build version (stored in the EDN file found on the given
+  ;   or the default filepath) to the given URI as a query string.
   ; - The EDN file must contain a map with a key ':build-version'.
-  ; - Using the actual build version as a query parameter could make the browser's cache handler
-  ;   updating the cached version of a file when the version changes in the URI.
+  ;
+  ; @info
+  ; Using the actual build version as a query parameter makes the browser's cache handler
+  ; updating the cached version of a file if the version changed in the URI.
   ;
   ; @param (string) uri
   ; @param (map)(opt) options
@@ -53,13 +55,10 @@
   ;
   ; @usage
   ; (uri<-actual-build-version "/my-style.css")
-  ;
-  ; @example
-  ; (uri<-actual-build-version "/my-style.css")
   ; =>
   ; "/my-style.css?v=0.0.1"
   ;
-  ; @example
+  ; @usage
   ; (uri<-actual-build-version "/my-style.css?my-param")
   ; =>
   ; "/my-style.css?my-param&v=0.0.1"
