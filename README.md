@@ -9,7 +9,7 @@ The <strong>clj-build-handler</strong> is a simple build version handler for Clo
 
 ```
 {:deps {mt-devtools/clj-build-handler {:git/url "https://github.com/mt-devtools/clj-build-handler"
-                                       :sha     "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}}
+                                       :sha     "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}}}
 ```
 
 ### Current version
