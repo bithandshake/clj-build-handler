@@ -28,7 +28,7 @@
 
 ; @tutorial How to update the actual build version?
 ;
-; The [build-handler.api/update-build-version!](#update-build-version!) function updates the build version stored in the EDN file
+; The [build-handler.api/update-build-version!](#update-build-version_) function updates the build version stored in the EDN file
 ; at the given or the default filepath.
 ;
 ; @usage
