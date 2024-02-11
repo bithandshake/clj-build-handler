@@ -10,9 +10,9 @@
 
 ; @tutorial How to get the actual build version?
 ;
-; - The [build-handler.api/get-actual-build-version](#get-actual-build-version) function returns the actual build version
-;   stored in the EDN file at the given or the default filepath.
-; - If the file does not contain a build version, it returns the 'INITIAL-BUILD-VERSION' value.
+; - The [get-actual-build-version](#get-actual-build-version) function returns the actual build version
+;   stored in the EDN file at the given or at the default filepath.
+; - If the file does not contain a build version, it returns the [INITIAL-BUILD-VERSION](#initial-build-version) value.
 ;
 ; @usage
 ; (get-actual-build-version)
@@ -21,15 +21,15 @@
 ;
 ; @usage
 ; (get-actual-build-version {:filepath "my-build-version.edn"})
-;=>
+; =>
 ; "0.4.2.0"
 
 
 
 ; @tutorial How to update the actual build version?
 ;
-; The [build-handler.api/update-build-version!](#update-build-version_) function updates the build version stored in the EDN file
-; at the given or the default filepath.
+; The [update-build-version!](#update-build-version_) function updates the build version stored in the EDN file
+; at the given or at the default filepath.
 ;
 ; @usage
 ; (update-build-version! :auto)

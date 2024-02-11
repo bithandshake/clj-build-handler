@@ -7,11 +7,11 @@
 
 (defn uri<-build-version
   ; @description
-  ; Appends the given build version to the given URI as a query string.
+  ; Appends the given build version as a query string to the given URI.
   ;
   ; @info
-  ; Using the actual build version as a query parameter makes the browser's cache
-  ; handler updating the cached version of a file if the version changed in the URI.
+  ; Using the actual build version as a query parameter in file URIs, makes the browser's cache handler update
+  ; the cached version of a file if the version changed in the URI.
   ;
   ; @param (string) uri
   ; @param (string) build-version

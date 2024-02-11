@@ -9,12 +9,12 @@
 
 (defn update-build-version!
   ; @description
-  ; - Updates the build version stored in the EDN file at the given or the default filepath.
-  ; - If the given version is a specific value, it stores the value in the file.
+  ; - Updates the build version stored in the EDN file at the given or at the default filepath.
+  ; - If the given version is a specific value, it stores the provided value in the file.
   ; - If the given version is ':auto', it updates the current build version in the file by increasing it.
   ; - If the given version is ':auto', and the file does not contain an increasable build version,
   ;   it stores the 'INITIAL-BUILD-VERSION' value in the file.
-  ; - An increasable build version is a string that contains only digits separated by period characters (.).
+  ; - An increasable build version is a string that contains only digits separated by period characters ('.').
   ; - The EDN file must contain a map with a key ':build-version'.
   ;
   ; @param (keyword or string) build-version

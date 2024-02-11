@@ -9,7 +9,7 @@
 
 (defn get-actual-build-version
   ; @description
-  ; - Returns the actual build version stored in the EDN file at the given or the default filepath.
+  ; - Returns the actual build version stored in the EDN file at the given or at the default filepath.
   ; - If the file does not contain a build version, it returns the 'INITIAL-BUILD-VERSION' value.
   ; - The EDN file must contain a map with a key ':build-version'.
   ;
@@ -40,8 +40,7 @@
 
 (defn uri<-actual-build-version
   ; @description
-  ; - Appends the actual build version (stored in the EDN file at the given
-  ;   or the default filepath) to the given URI as a query string.
+  ; - Appends the actual build version (stored in the EDN file at the given or at the default filepath) to the given URI as a query string.
   ; - The EDN file must contain a map with a key ':build-version'.
   ;
   ; @info
