@@ -21,7 +21,7 @@
   ; :auto
   ; @param (map)(opt) options
   ; {:filepath (string)(opt)
-  ;   Default: "environment/build-version.edn"}
+  ;   Default: "environment/build-handler/build-version.edn"}
   ;
   ; @usage
   ; (update-build-version! :auto)

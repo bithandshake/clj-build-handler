@@ -5,10 +5,10 @@
 ;; ----------------------------------------------------------------------------
 
 ; @description
-; The default build version filepath ('environment/build-version.edn') is used when no filepath is provided.
+; The default build version filepath ('environment/build-handler/build-version.edn') is used if no filepath is provided.
 ;
 ; @constant (string)
-(def DEFAULT-BUILD-VERSION-FILEPATH "environment/build-version.edn")
+(def DEFAULT-BUILD-VERSION-FILEPATH "environment/build-handler/build-version.edn")
 
 ; @description
 ; The initial build version ('0.0.1') is used when no version is found in the build version file.
