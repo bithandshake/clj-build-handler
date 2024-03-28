@@ -1,9 +1,32 @@
 
 (ns iso.build-handler.utils
-    (:require [fruits.uri.api :as uri]))
+    (:require [fruits.uri.api :as uri]
+              [fruits.string.api :as string]
+              [io.api :as io]))
 
 ;; ---------------------------------------------------------------------------
 ;; ---------------------------------------------------------------------------
+
+(defn filepath<-build-version
+  ; @description
+  ; Appends the given build version to the given filepath.
+  ;
+  ; @param (string) filepath
+  ; @param (string) build-version
+  ;
+  ; @usage
+  ; (filepath<-build-version "/my-directory/my-file.ext" "0.0.1")
+  ; =>
+  ; "/my-directory/my-file-0-0-1.ext"
+  ;
+  ; @return (string)
+  [filepath build-version]
+  (let [parent-path   (io/filepath->parent-path filepath)
+        basename      (io/filepath->basename    filepath)
+        extension     (io/filepath->extension   filepath)
+        build-version (string/replace-part build-version "." "-")]
+       (if parent-path (str parent-path "/" basename "-" build-version (if extension ".") extension)
+                       (str                 basename "-" build-version (if extension ".") extension))))
 
 (defn uri<-build-version
   ; @description
